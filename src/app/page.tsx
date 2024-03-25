@@ -78,7 +78,7 @@ export default function Home() {
         <Card title="Prisma ORM" icon={<Image className="absolute" width={66} height={65} src="cursor.svg" alt="cursor"/>}>
             <CanvasRevealEffect
               animationSpeed={5.1}
-              colors={[[192, 132, 252]]}
+              colors={[[129, 141, 248]]}
               containerClassName="bg-indigo-900"
             />
         </Card>
