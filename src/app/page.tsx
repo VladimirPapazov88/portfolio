@@ -58,12 +58,31 @@ export default function Home() {
 
       <h1 className="text-center -mt-36 text-3xl mb-12 font-bold z-50">My favourite stack for web:</h1>
 
-      <Card title="React" icon={<Image className="absolute" width={66} height={65} src="cursor.svg" alt="cursor"/>}>
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-blue-900"
-          />
-      </Card>
+      <div className="flex justify-center gap-7">
+        <Card title="NextJS" icon={<Image className="absolute" width={66} height={65} src="cursor.svg" alt="cursor"/>}>
+            <CanvasRevealEffect
+              animationSpeed={5.1}
+              colors={[[161, 161, 170]]}
+              containerClassName="bg-zinc-900"
+            />
+        </Card>
+
+        <Card title="Tailwind CSS" icon={<Image className="absolute" width={66} height={65} src="cursor.svg" alt="cursor"/>}>
+            <CanvasRevealEffect
+              animationSpeed={5.1}
+              colors={[[96, 165, 250]]}
+              containerClassName="bg-blue-900"
+            />
+        </Card>
+
+        <Card title="Prisma ORM" icon={<Image className="absolute" width={66} height={65} src="cursor.svg" alt="cursor"/>}>
+            <CanvasRevealEffect
+              animationSpeed={5.1}
+              colors={[[192, 132, 252]]}
+              containerClassName="bg-indigo-900"
+            />
+        </Card>
+      </div>
     </main>
   );
 }
@@ -127,7 +146,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className=" bg-black border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] relative"
+      className=" bg-black border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full p-4 relative h-[30rem] relative"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
