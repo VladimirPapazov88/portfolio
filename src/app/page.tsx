@@ -15,10 +15,10 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 export default function Home() {
   const words = [
     {
-      text: "Hello",
+      text: "Hello!",
     },
     {
-      text: "my",
+      text: "My",
     },
     {
       text: "name",
@@ -98,7 +98,7 @@ function Navbar({ className }: { className?: string }) {
       <span className="font-bold">Portfolio</span>
 
       <div>
-        <a className=" underline-offset-4 underline decoration-2" href="/">Home</a>
+        <a className=" underline-offset-4 underline decoration-2 font-bold" href="/">Home</a>
       </div>
 
       <button onClick={() => {window.location.href = "https://github.com/VladimirPapazov88"}} className="w-fit bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6 text-white inline-block">
