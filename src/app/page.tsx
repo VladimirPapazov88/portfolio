@@ -58,7 +58,7 @@ export default function Home() {
 
       <h1 className="text-center -mt-36 text-3xl mb-12 font-bold z-50">My favourite stack for web:</h1>
 
-      <div className="flex justify-center gap-7">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-7">
         <Card title="NextJS" icon={<Image className="absolute" width={66} height={65} src="cursor.svg" alt="cursor"/>}>
             <CanvasRevealEffect
               animationSpeed={5.1}
